@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<base href="/">-->
+        <base href="index.html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <title>Tapu Sorgula || Sistemi </title>
+        <style type="text/css">.loading-indicator { display: flex; justify-content: center; align-items: center; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 9999; } .loading-indicator:before { content: ""; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; } .loading-indicator .sk-cube-grid { width: 60px; height: 60px; margin: 100px auto; margin-top: 0; } .loading-indicator .sk-cube-grid .sk-cube { width: 20px; height: 20px; background-color: #333; float: left; -webkit-animation: sk-cube-grid-scale-delay 1.3s infinite ease-in-out; animation: sk-cube-grid-scale-delay 1.3s infinite ease-in-out; } .loading-indicator .sk-cube-grid .sk-cube-orange { background-color: #f37c02; } .loading-indicator .sk-cube-grid .sk-cube-blue { background-color: #003894; } .loading-indicator .sk-cube-grid .sk-cube1 { -webkit-animation-delay: .2s; animation-delay: .2s; } .loading-indicator .sk-cube-grid .sk-cube2 { -webkit-animation-delay: .3s; animation-delay: .3s; } .loading-indicator .sk-cube-grid .sk-cube3 { -webkit-animation-delay: .4s; animation-delay: .4s; } .loading-indicator .sk-cube-grid .sk-cube4 { -webkit-animation-delay: .1s; animation-delay: .1s; } .loading-indicator .sk-cube-grid .sk-cube5 { -webkit-animation-delay: .2s; animation-delay: .2s; } .loading-indicator .sk-cube-grid .sk-cube6 { -webkit-animation-delay: .3s; animation-delay: .3s; } .loading-indicator .sk-cube-grid .sk-cube7 { -webkit-animation-delay: 0s; animation-delay: 0s; } .loading-indicator .sk-cube-grid .sk-cube8 { -webkit-animation-delay: .1s; animation-delay: .1s; } .loading-indicator .sk-cube-grid .sk-cube9 { -webkit-animation-delay: .2s; animation-delay: .2s; }</style>         
+        <link href="./tapusorgula/icon" rel="stylesheet">
+        <link href="font-awesome.css" rel="stylesheet">
+        <link href="./tapusorgula/css" rel="stylesheet">
+        <link href="./tapusorgula/styles.f948b64d9e6289e4393d.bundle.css" rel="stylesheet">
+        <style></style>
+        <style>.cerceve[_ngcontent-c1] { position: relative; } .kutuBir[_ngcontent-c1] { position: absolute; width: 100%; z-index: 100; } .kutuBir[_ngcontent-c1]   .mobile[_ngcontent-c1] { background: 0 0; position: absolute; width: 100%; } .kutuBir[_ngcontent-c1]   .mobile[_ngcontent-c1]   .scrolled[_ngcontent-c1] { background: #ff0; } .kutuBir[_ngcontent-c1]   .desktop[_ngcontent-c1] { background: 0 0; position: absolute; width: 100%; } .kutuBir[_ngcontent-c1]   .desktop[_ngcontent-c1]   .scrolled[_ngcontent-c1] { background: purple; }</style>
+        <style>*[_ngcontent-c2] { font-family: Raleway,sans-serif; line-height: 1.2; z-index: 1; font-size: 15px; } .headerWhenTop[_ngcontent-c2]   .header-first[_ngcontent-c2] { position: absolute; width: 77%; } .headerWhenTop[_ngcontent-c2]   .header-first[_ngcontent-c2]   .headerMenuArea[_ngcontent-c2] { position: relative; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; height: 70px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } .headerWhenSlided[_ngcontent-c2]   .header-first[_ngcontent-c2] { z-index: 100; background: -webkit-gradient(linear,left bottom,left top,from(#403f4d),color-stop(66%,#652a59),to(#7a1e55)); background: linear-gradient(0deg,#403f4d 0,#652a59 66%,#7a1e55 100%); } .headerWhenSlided[_ngcontent-c2]   .header-first[_ngcontent-c2]   .headerMenu[_ngcontent-c2] { position: relative; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 70px; } .login-btn[_ngcontent-c2] { cursor: pointer!important; } .hidden[_ngcontent-c2] { display: none; } .mat-menu-content { padding-top: 0!important; padding-bottom: 0!important; } .menu-header[_ngcontent-c2] { background-color: #ffba52; border-radius: 2px 2px 0 0; line-height: 60px; font-size: 18px; } @media (max-width:1550px){ .main-nav[_ngcontent-c2]   .main-menu__item[_ngcontent-c2] {  margin-left: 0;  padding: 9px 0;  font-size: 25px;  font-weight: 900; }  .main-nav.active[_ngcontent-c2] {  -webkit-transform: translateX(0);  transform: translateX(0); } } .navbar-form[_ngcontent-c2] { position: relative; } .navbar-form[_ngcontent-c2]   .form-control[_ngcontent-c2] { height: 32px; border-color: #f58220; border-radius: 2px; font-size: 13px; color: #263b80; padding-right: 32px; } .navbar-form[_ngcontent-c2]   .form-control[_ngcontent-c2]::-webkit-input-placeholder { color: #bbb; } .navbar-form[_ngcontent-c2]   .form-control[_ngcontent-c2]::-ms-input-placeholder { color: #bbb; } .navbar-form[_ngcontent-c2]   .form-control[_ngcontent-c2]::placeholder { color: #bbb; } .navbar-form[_ngcontent-c2]   .form-control[_ngcontent-c2]:focus { -webkit-box-shadow: none; box-shadow: none; } .navbar-form[_ngcontent-c2]   .btn-submit[_ngcontent-c2] { position: absolute; top: 0; right: 0; color: #42589e; } .navbar-form[_ngcontent-c2]   .btn-submit.mat-icon-button[_ngcontent-c2] { width: 32px; height: 32px; line-height: 32px; border-radius: 0 2px 2px 0; } @media (max-width:1200px){ .main-nav[_ngcontent-c2] {  position: fixed;  top: 0;  bottom: 0;  left: 0;  right: 0;  background-color: #3e5368;  padding: 6rem 3rem;  -webkit-transform: translateX(-120%);  transform: translateX(-120%);  -webkit-transition: -webkit-transform .55s cubic-bezier(.785,.135,.15,.86);  transition: transform .55s cubic-bezier(.785,.135,.15,.86);  transition: transform .55s cubic-bezier(.785,.135,.15,.86),-webkit-transform .55s cubic-bezier(.785,.135,.15,.86); } }</style>
+        <style>footer[_ngcontent-c3] { background: #263b80; padding: 24px 0; } .col[_ngcontent-c3] { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #fff; } .col.col-left[_ngcontent-c3] { text-align: left; } .col.col-center[_ngcontent-c3] { text-align: center; } .col.col-right[_ngcontent-c3] { text-align: right; } .col[_ngcontent-c3]   .copyright[_ngcontent-c3] { font-size: 13px; } .col[_ngcontent-c3]   .footer-logo[_ngcontent-c3] { margin: 0 auto; } .col[_ngcontent-c3]   .footer-logo[_ngcontent-c3]   .mat-icon[_ngcontent-c3] { width: 96px; height: auto; } .col[_ngcontent-c3]   .footer-nav[_ngcontent-c3] { list-style-type: none; text-align: left; padding: 0; margin: 0; font-size: 13px; } .col[_ngcontent-c3]   .footer-nav[_ngcontent-c3]   li[_ngcontent-c3] + li[_ngcontent-c3]   a[_ngcontent-c3] { display: inline-block; margin-top: 10px; } .col[_ngcontent-c3]   .footer-nav[_ngcontent-c3]   li[_ngcontent-c3]   a[_ngcontent-c3] { -webkit-transition: .25s ease-in-out; transition: .25s ease-in-out; color: #fff; text-decoration: none; } .col[_ngcontent-c3]   .footer-nav[_ngcontent-c3]   li[_ngcontent-c3]   a[_ngcontent-c3]:active, .col[_ngcontent-c3]   .footer-nav[_ngcontent-c3]   li[_ngcontent-c3]   a[_ngcontent-c3]:hover { color: #f58220; }</style>
+        <style>.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button { box-sizing: border-box; position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; outline: 0; border: none; -webkit-tap-highlight-color: transparent; display: inline-block; white-space: nowrap; text-decoration: none; vertical-align: baseline; text-align: center; margin: 0; min-width: 88px; line-height: 36px; padding: 0 16px; border-radius: 2px; } .mat-button[disabled], .mat-flat-button[disabled], .mat-icon-button[disabled], .mat-stroked-button[disabled] { cursor: default; } .mat-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-button.cdk-program-focused .mat-button-focus-overlay, .mat-flat-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-flat-button.cdk-program-focused .mat-button-focus-overlay, .mat-icon-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-icon-button.cdk-program-focused .mat-button-focus-overlay, .mat-stroked-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-stroked-button.cdk-program-focused .mat-button-focus-overlay { opacity: 1; } .mat-button::-moz-focus-inner, .mat-flat-button::-moz-focus-inner, .mat-icon-button::-moz-focus-inner, .mat-stroked-button::-moz-focus-inner { border: 0; } .mat-button .mat-button-focus-overlay, .mat-icon-button .mat-button-focus-overlay { transition: none; opacity: 0; } .mat-button:hover .mat-button-focus-overlay, .mat-stroked-button:hover .mat-button-focus-overlay { opacity: 1; } .mat-raised-button { box-sizing: border-box; position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; outline: 0; border: none; -webkit-tap-highlight-color: transparent; display: inline-block; white-space: nowrap; text-decoration: none; vertical-align: baseline; text-align: center; margin: 0; min-width: 88px; line-height: 36px; padding: 0 16px; border-radius: 2px; transform: translate3d(0,0,0); transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1); } .mat-raised-button[disabled] { cursor: default; } .mat-raised-button.cdk-keyboard-focused .mat-button-focus-overlay, .mat-raised-button.cdk-program-focused .mat-button-focus-overlay { opacity: 1; } .mat-raised-button::-moz-focus-inner { border: 0; } .mat-raised-button:not([class*=mat-elevation-z]) { box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12); } .mat-raised-button:not([disabled]):active:not([class*=mat-elevation-z]) { box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12); } .mat-raised-button[disabled] { box-shadow: none; } .mat-stroked-button { border: 1px solid currentColor; padding: 0 15px; line-height: 34px; } .mat-stroked-button:not([class*=mat-elevation-z]) { box-shadow: 0 0 0 0 rgba(0,0,0,.2),0 0 0 0 rgba(0,0,0,.14),0 0 0 0 rgba(0,0,0,.12); } .mat-flat-button:not([class*=mat-elevation-z]) { box-shadow: 0 0 0 0 rgba(0,0,0,.2),0 0 0 0 rgba(0,0,0,.14),0 0 0 0 rgba(0,0,0,.12); } .mat-fab { box-sizing: border-box; position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; outline: 0; border: none; -webkit-tap-highlight-color: transparent; display: inline-block; white-space: nowrap; text-decoration: none; vertical-align: baseline; text-align: center; margin: 0; min-width: 88px; line-height: 36px; padding: 0 16px; border-radius: 2px; transform: translate3d(0,0,0); transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1); min-width: 0; border-radius: 50%; width: 56px; height: 56px; padding: 0; flex-shrink: 0; } .mat-fab[disabled] { cursor: default; } .mat-fab.cdk-keyboard-focused .mat-button-focus-overlay, .mat-fab.cdk-program-focused .mat-button-focus-overlay { opacity: 1; } .mat-fab::-moz-focus-inner { border: 0; } .mat-fab:not([class*=mat-elevation-z]) { box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12); } .mat-fab:not([disabled]):active:not([class*=mat-elevation-z]) { box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12); } .mat-fab[disabled] { box-shadow: none; } .mat-fab:not([class*=mat-elevation-z]) { box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12); } .mat-fab:not([disabled]):active:not([class*=mat-elevation-z]) { box-shadow: 0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12); } .mat-fab .mat-button-wrapper { padding: 16px 0; display: inline-block; line-height: 24px; } .mat-mini-fab { box-sizing: border-box; position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; outline: 0; border: none; -webkit-tap-highlight-color: transparent; display: inline-block; white-space: nowrap; text-decoration: none; vertical-align: baseline; text-align: center; margin: 0; min-width: 88px; line-height: 36px; padding: 0 16px; border-radius: 2px; transform: translate3d(0,0,0); transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1); min-width: 0; border-radius: 50%; width: 40px; height: 40px; padding: 0; flex-shrink: 0; } .mat-mini-fab[disabled] { cursor: default; } .mat-mini-fab.cdk-keyboard-focused .mat-button-focus-overlay, .mat-mini-fab.cdk-program-focused .mat-button-focus-overlay { opacity: 1; } .mat-mini-fab::-moz-focus-inner { border: 0; } .mat-mini-fab:not([class*=mat-elevation-z]) { box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12); } .mat-mini-fab:not([disabled]):active:not([class*=mat-elevation-z]) { box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12); } .mat-mini-fab[disabled] { box-shadow: none; } .mat-mini-fab:not([class*=mat-elevation-z]) { box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12); } .mat-mini-fab:not([disabled]):active:not([class*=mat-elevation-z]) { box-shadow: 0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12); } .mat-mini-fab .mat-button-wrapper { padding: 8px 0; display: inline-block; line-height: 24px; } .mat-icon-button { padding: 0; min-width: 0; width: 40px; height: 40px; flex-shrink: 0; line-height: 40px; border-radius: 50%; } .mat-icon-button .mat-icon, .mat-icon-button i { line-height: 24px; } .mat-button, .mat-fab, .mat-icon-button, .mat-mini-fab, .mat-raised-button { color: currentColor; } .mat-button .mat-button-wrapper>*, .mat-fab .mat-button-wrapper>*, .mat-icon-button .mat-button-wrapper>*, .mat-mini-fab .mat-button-wrapper>*, .mat-raised-button .mat-button-wrapper>* { vertical-align: middle; } .mat-button-focus-overlay, .mat-button-ripple { top: 0; left: 0; right: 0; bottom: 0; position: absolute; pointer-events: none; } .mat-button-focus-overlay { background-color: rgba(0,0,0,.12); border-radius: inherit; opacity: 0; transition: opacity .2s cubic-bezier(.35,0,.25,1),background-color .2s cubic-bezier(.35,0,.25,1); } @media screen and (-ms-high-contrast:active){ .mat-button-focus-overlay {  background-color: rgba(255,255,255,.5); } } .mat-button-ripple-round { border-radius: 50%; z-index: 1; } @media screen and (-ms-high-contrast:active){ .mat-button, .mat-fab, .mat-flat-button, .mat-icon-button, .mat-mini-fab, .mat-raised-button {  outline: solid 1px; } }</style>
+        <style>.mat-icon { background-repeat: no-repeat; display: inline-block; fill: currentColor; height: 24px; width: 24px; }</style>
+        <style>.mat-menu-panel { min-width: 112px; max-width: 280px; overflow: auto; -webkit-overflow-scrolling: touch; max-height: calc(100vh - 48px); border-radius: 2px; outline: 0; } .mat-menu-panel:not([class*=mat-elevation-z]) { box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12); } .mat-menu-panel.mat-menu-after.mat-menu-below { transform-origin: left top; } .mat-menu-panel.mat-menu-after.mat-menu-above { transform-origin: left bottom; } .mat-menu-panel.mat-menu-before.mat-menu-below { transform-origin: right top; } .mat-menu-panel.mat-menu-before.mat-menu-above { transform-origin: right bottom; } [dir=rtl] .mat-menu-panel.mat-menu-after.mat-menu-below { transform-origin: right top; } [dir=rtl] .mat-menu-panel.mat-menu-after.mat-menu-above { transform-origin: right bottom; } [dir=rtl] .mat-menu-panel.mat-menu-before.mat-menu-below { transform-origin: left top; } [dir=rtl] .mat-menu-panel.mat-menu-before.mat-menu-above { transform-origin: left bottom; } .mat-menu-panel.ng-animating { pointer-events: none; } @media screen and (-ms-high-contrast:active){ .mat-menu-panel {  outline: solid 1px; } } .mat-menu-content { padding-top: 8px; padding-bottom: 8px; } .mat-menu-item { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; outline: 0; border: none; -webkit-tap-highlight-color: transparent; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; line-height: 48px; height: 48px; padding: 0 16px; text-align: left; text-decoration: none; position: relative; } .mat-menu-item[disabled] { cursor: default; } [dir=rtl] .mat-menu-item { text-align: right; } .mat-menu-item .mat-icon { margin-right: 16px; vertical-align: middle; } [dir=rtl] .mat-menu-item .mat-icon { margin-left: 16px; margin-right: 0; } .mat-menu-item-submenu-trigger { padding-right: 32px; } .mat-menu-item-submenu-trigger::after { width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 5px; border-color: transparent transparent transparent currentColor; content: ''; display: inline-block; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); } [dir=rtl] .mat-menu-item-submenu-trigger { padding-right: 16px; padding-left: 32px; } [dir=rtl] .mat-menu-item-submenu-trigger::after { right: auto; left: 16px; transform: rotateY(180deg) translateY(-50%); } button.mat-menu-item { width: 100%; } .mat-menu-ripple { top: 0; left: 0; right: 0; bottom: 0; position: absolute; pointer-events: none; }</style>
+        <style>.login-btn[_ngcontent-c7]   footer[_ngcontent-c7] { cursor: pointer!important; } .to-use-item[_ngcontent-c7] { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; position: relative; display: flex; display: -ms-flexbox; -ms-flex-pack: center; -ms-flex-align: center; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; overflow: hidden; } .to-use-item[_ngcontent-c7]   .to-use-text[_ngcontent-c7] { position: absolute; color: #fff; font-weight: 500; text-align: center; } .to-use-item[_ngcontent-c7]   .to-use-text[_ngcontent-c7]   .home-slider-title[_ngcontent-c7] { text-align: center; padding: 5px!important; } .to-use-item[_ngcontent-c7]   .to-use-text[_ngcontent-c7]   .home-slider-description[_ngcontent-c7] { text-align: center!important; } .to-use-item[_ngcontent-c7]   .to-use-text[_ngcontent-c7]   .home-slider-description[_ngcontent-c7]   .d-block[_ngcontent-c7] { padding: 5px!important; } .to-use-item[_ngcontent-c7] + .to-use-item[_ngcontent-c7] { margin-top: 15px; } [_nghost-c7]  .owl-nav { display: none; } [_nghost-c7]  .owl-dots { position: absolute; -webkit-transform: scale(2)!important; transform: scale(2)!important; left: 25%; right: 25%; margin-top: -11vh; } [_nghost-c7]  .owl-theme .owl-dots .owl-dot.active span, [_nghost-c7]  .owl-theme .owl-dots .owl-dot:hover span { background: #fcac45!important; } [_nghost-c7]  .section { margin-bottom: 0; } [_nghost-c7]  .renk-ver { color: #f49836; } [_nghost-c7]  .owl-carousel .owl-item img { height: 100%; max-height: 64vh; min-height: 500px; min-width: 1000px; } .list-disc[_ngcontent-c7] { margin: 0; } .project-field[_ngcontent-c7] { -webkit-box-shadow: 0 0 8px 1px RGB(0 0 0/10%); box-shadow: 0 0 8px 1px RGB(0 0 0/10%); position: relative; } .big-service-button.btn-sm[_ngcontent-c7] { padding-left: 20px!important; padding-right: 20px!important; } .project-field[_ngcontent-c7]   .big-service-button[_ngcontent-c7] { position: absolute; bottom: 15px; left: 15px; font-size: 14px; font-family: Barlow,sans-serif; } .field--name-body[_ngcontent-c7]   a[_ngcontent-c7] { color: #264e9a; } .big-service-button[_ngcontent-c7] { color: #e3803a; border-color: #4e97d0!important; border-radius: 8px!important; padding-left: 28px; padding-right: 28px; border-width: 2px; font-weight: 600; position: relative; -webkit-transform: scale(.7); transform: scale(.7); } .btn-group-sm[_ngcontent-c7] > .btn[_ngcontent-c7], .btn-group-sm[_ngcontent-c7] > a.button[_ngcontent-c7], .btn-sm[_ngcontent-c7] { padding: .25rem .5rem; font-size: .875rem; border-radius: .2rem; } .btn[_ngcontent-c7], a.button[_ngcontent-c7] { display: inline-block; font-weight: 400; line-height: 1.5; color: #212529; text-align: center; text-decoration: none; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: transparent; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; border-radius: .25rem; -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; }</style>
+        <style>.loading-indicator[_ngcontent-c8] { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 9999; } .loading-indicator[_ngcontent-c8]:before { content: ''; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.25); } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8] { width: 60px; height: 60px; margin: 0 auto 100px; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube[_ngcontent-c8] { width: 20px; height: 20px; background-color: #333; float: left; -webkit-animation: 1.3s ease-in-out infinite sk-cube-grid-scale-delay; animation: 1.3s ease-in-out infinite sk-cube-grid-scale-delay; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube-orange[_ngcontent-c8] { background-color: #f37c02; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube-blue[_ngcontent-c8] { background-color: #003894; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube1[_ngcontent-c8] { -webkit-animation-delay: .2s; animation-delay: .2s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube2[_ngcontent-c8] { -webkit-animation-delay: .3s; animation-delay: .3s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube3[_ngcontent-c8] { -webkit-animation-delay: .4s; animation-delay: .4s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube4[_ngcontent-c8] { -webkit-animation-delay: .1s; animation-delay: .1s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube5[_ngcontent-c8] { -webkit-animation-delay: .2s; animation-delay: .2s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube6[_ngcontent-c8] { -webkit-animation-delay: .3s; animation-delay: .3s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube7[_ngcontent-c8] { -webkit-animation-delay: 0s; animation-delay: 0s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube8[_ngcontent-c8] { -webkit-animation-delay: .1s; animation-delay: .1s; } .loading-indicator[_ngcontent-c8]   .sk-cube-grid[_ngcontent-c8]   .sk-cube9[_ngcontent-c8] { -webkit-animation-delay: .2s; animation-delay: .2s; }</style>
+        <style>@charset "UTF-8"; @media (max-width:575px){ form[_ngcontent-c9] {  max-width: 90%; } } @media (min-width:576px){ form[_ngcontent-c9] {  max-width: 400px; } } @media (max-width:767px){ .back-sm[_ngcontent-c9] {  min-width: 36px;  padding: 0;  color: #fff; }  .column-left[_ngcontent-c9] {  height: 35vh;  -webkit-box-orient: vertical;  -webkit-box-direction: normal;  -ms-flex-direction: column;  flex-direction: column; }  .left-logo[_ngcontent-c9] {  max-width: 150px; }  .hid-sm[_ngcontent-c9] {  display: none; }  .form-title[_ngcontent-c9] {  color: #fff;  text-align: center; }  .column-right[_ngcontent-c9] {  padding-top: 45px;  height: 35vh; }  .footer[_ngcontent-c9] {  margin-top: calc(90px - 1.25rem);  margin-bottom: 45px; }  .foot-logo[_ngcontent-c9] {  float: left;  max-width: 50px; } } @media (min-width:768px){ .back-md[_ngcontent-c9] {  color: #335cad; }  .column[_ngcontent-c9] {  width: 50%;  height: 125vh;  float: left; }  .left-logo[_ngcontent-c9] {  max-width: 230px; }  .form[_ngcontent-c9] {  max-width: 400px;  width: 100%;  text-align: center; }  .btn-tapu[_ngcontent-c9] {  width: 100%;  font-weight: 500; }  .hid-md[_ngcontent-c9] {  display: none; }  .form-title[_ngcontent-c9] {  color: #335cad; }  .footer[_ngcontent-c9] {  margin-top: calc(100px - 1.25rem); } } .button-back[_ngcontent-c9] { position: absolute; top: 15px; left: 15px; } .column[_ngcontent-c9] { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } .platform-desktop .column-left { background: url(/assets/img/icon/webTapu-footer-zemin.svg) bottom left no-repeat #335cad; } .platform-mobile .column-left { background: url("data:image/svg+xml,%3C%3Fxml version%3D%221.0%22 encoding%3D%22utf-8%22%3F%3E%0D%3C!-- Generator%3A Adobe Illustrator 23.0.1%2C SVG Export Plug-In . SVG Version%3A 6.00 Build 0)  --%3E%0D%3Csvg version%3D%221.1%22 id%3D%22Layer_1%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22 x%3D%220px%22 y%3D%220px%22%0D%09 viewBox%3D%220 0 960 208%22 style%3D%22enable-background%3Anew 0 0 960 208%3B%22 xml%3Aspace%3D%22preserve%22%3E%0D%3Cstyle type%3D%22text%2Fcss%22%3E%0D%09.st0%7Bclip-path%3Aurl(%23SVGID_2_)%3Bfill%3A%23FF9900%3B%7D%0D%09.st1%7Bclip-path%3Aurl(%23SVGID_2_)%3Bfill%3A%237D97CB%3B%7D%0D%09.st2%7Bclip-path%3Aurl(%23SVGID_4_)%3B%7D%0D%09.st3%7Bclip-path%3Aurl(%23SVGID_6_)%3Bfill%3A%237D97CB%3B%7D%0D%09.st4%7Bclip-path%3Aurl(%23SVGID_6_)%3Bfill%3A%23FF9900%3B%7D%0D%09.st5%7Bclip-path%3Aurl(%23SVGID_8_)%3B%7D%0D%09.st6%7Bclip-path%3Aurl(%23SVGID_10_)%3Bfill%3A%237D97CB%3B%7D%0D%09.st7%7Bclip-path%3Aurl(%23SVGID_10_)%3Bfill%3A%23FF9900%3B%7D%0D%09.st8%7Bclip-path%3Aurl(%23SVGID_12_)%3B%7D%0D%09.st9%7Bclip-path%3Aurl(%23SVGID_14_)%3Bfill%3A%23FFFFFF%3B%7D%0D%09.st10%7Bclip-path%3Aurl(%23SVGID_14_)%3Bfill%3A%231745A2%3B%7D%0D%09.st11%7Bclip-path%3Aurl(%23SVGID_16_)%3Bfill%3A%23FF8300%3B%7D%0D%09.st12%7Bclip-path%3Aurl(%23SVGID_18_)%3B%7D%0D%09.st13%7Bclip-path%3Aurl(%23SVGID_20_)%3Bfill%3Anone%3Bstroke%3A%23FF9900%3Bstroke-width%3A2%3Bstroke-miterlimit%3A10%3B%7D%0D%09.st14%7Bclip-path%3Aurl(%23SVGID_20_)%3Bfill%3A%237D97CB%3B%7D%0D%09.st15%7Bclip-path%3Aurl(%23SVGID_22_)%3B%7D%0D%09.st16%7Bclip-path%3Aurl(%23SVGID_24_)%3Bfill%3A%23FFFFFF%3B%7D%0D%09.st17%7Bclip-path%3Aurl(%23SVGID_26_)%3B%7D%0D%09.st18%7Bclip-path%3Aurl(%23SVGID_28_)%3Bfill%3A%23FFFFFF%3B%7D%0D%09.st19%7Bclip-path%3Aurl(%23SVGID_28_)%3Bfill%3A%23FF0000%3B%7D%0D%09.st20%7Bclip-path%3Aurl(%23SVGID_30_)%3B%7D%0D%09.st21%7Bclip-path%3Aurl(%23SVGID_32_)%3Bfill%3A%237D97CB%3B%7D%0D%09.st22%7Bclip-path%3Aurl(%23SVGID_32_)%3Bfill%3A%23FF9900%3B%7D%0D%09.st23%7Bclip-path%3Aurl(%23SVGID_34_)%3B%7D%0D%09.st24%7Bclip-path%3Aurl(%23SVGID_36_)%3Bfill%3A%23FFFFFF%3B%7D%0D%09.st25%7Bclip-path%3Aurl(%23SVGID_36_)%3Bfill%3A%23ED1C24%3B%7D%0D%09.st26%7Bclip-path%3Aurl(%23SVGID_38_)%3B%7D%0D%09.st27%7Bclip-path%3Aurl(%23SVGID_40_)%3Bfill%3A%237D97CB%3B%7D%0D%09.st28%7Bclip-path%3Aurl(%23SVGID_40_)%3Bfill%3A%23FF9900%3B%7D%0D%09.st29%7Bclip-path%3Aurl(%23SVGID_42_)%3B%7D%0D%09.st30%7Bclip-path%3Aurl(%23SVGID_44_)%3Bfill%3A%23FF8300%3B%7D%0D%09.st31%7Bclip-path%3Aurl(%23SVGID_46_)%3B%7D%0D%09.st32%7Bclip-path%3Aurl(%23SVGID_48_)%3Bfill%3A%237D97CB%3B%7D%0D%09.st33%7Bclip-path%3Aurl(%23SVGID_48_)%3Bfill%3A%23FF9900%3B%7D%0D%09.st34%7Bclip-path%3Aurl(%23SVGID_50_)%3Bfill%3A%23FFBA52%3B%7D%0D%09.st35%7Bclip-path%3Aurl(%23SVGID_52_)%3B%7D%0D%09.st36%7Bclip-path%3Aurl(%23SVGID_54_)%3Bfill%3A%23FFFFFF%3B%7D%0D%09.st37%7Bclip-path%3Aurl(%23SVGID_56_)%3B%7D%0D%09.st38%7Bclip-path%3Aurl(%23SVGID_58_)%3Bfill%3A%2300CE05%3B%7D%0D%09.st39%7Bclip-path%3Aurl(%23SVGID_58_)%3Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A3%3Bstroke-miterlimit%3A10%3B%7D%0D%09.st40%7Bclip-path%3Aurl(%23SVGID_60_)%3B%7D%0D%09.st41%7Bclip-path%3Aurl(%23SVGID_62_)%3Bfill%3A%23335CAD%3B%7D%0D%09.st42%7Bclip-path%3Aurl(%23SVGID_64_)%3B%7D%0D%09.st43%7Bclip-path%3Aurl(%23SVGID_66_)%3Bfill%3A%23335CAD%3B%7D%0D%09.st44%7Bclip-path%3Aurl(%23SVGID_68_)%3B%7D%0D%09.st45%7Bclip-path%3Aurl(%23SVGID_70_)%3Bfill%3A%23FF0000%3B%7D%0D%09.st46%7Bclip-path%3Aurl(%23SVGID_70_)%3Bfill%3A%23FFFFFF%3B%7D%0D%09.st47%7Bclip-path%3Aurl(%23SVGID_72_)%3B%7D%0D%09.st48%7Bclip-path%3Aurl(%23SVGID_74_)%3Bfill%3A%23335CAD%3B%7D%0D%09.st49%7Bclip-path%3Aurl(%23SVGID_76_)%3B%7D%0D%09.st50%7Bclip-path%3Aurl(%23SVGID_78_)%3Bfill%3A%23FFA51F%3B%7D%0D%09.st51%7Bclip-path%3Aurl(%23SVGID_78_)%3Bfill%3A%23335CAD%3B%7D%0D%09.st52%7Bclip-path%3Aurl(%23SVGID_80_)%3B%7D%0D%09.st53%7Bclip-path%3Aurl(%23SVGID_82_)%3Bfill%3A%23FFA51F%3B%7D%0D%09.st54%7Bclip-path%3Aurl(%23SVGID_82_)%3Bfill%3A%23335CAD%3B%7D%0D%09.st55%7Bclip-path%3Aurl(%23SVGID_84_)%3B%7D%0D%09.st56%7Bclip-path%3Aurl(%23SVGID_86_)%3Bfill%3A%231745A2%3B%7D%0D%09.st57%7Bclip-path%3Aurl(%23SVGID_88_)%3B%7D%0D%09.st58%7Bclip-path%3Aurl(%23SVGID_90_)%3Bfill%3A%23335CAD%3B%7D%0D%09.st59%7Bclip-path%3Aurl(%23SVGID_92_)%3B%7D%0D%09.st60%7Bclip-path%3Aurl(%23SVGID_94_)%3Bfill%3A%23FFA51F%3B%7D%0D%09.st61%7Bclip-path%3Aurl(%23SVGID_94_)%3Bfill%3A%23335CAD%3B%7D%0D%09.st62%7Bclip-path%3Aurl(%23SVGID_96_)%3B%7D%0D%09.st63%7Bclip-path%3Aurl(%23SVGID_98_)%3Bfill%3A%23FFFFFF%3B%7D%0D%09.st64%7Bfill%3A%23335CAD%3B%7D%0D%09.st65%7Bfill%3A%23FFFFFF%3B%7D%0D%09.st66%7Bfill%3A%230F4998%3B%7D%0D%09.st67%7Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-miterlimit%3A10%3B%7D%0D%09.st68%7Bclip-path%3Aurl(%23SVGID_100_)%3B%7D%0D%09.st69%7Bclip-path%3Aurl(%23SVGID_102_)%3Bfill%3A%23002F87%3B%7D%0D%09.st70%7Bclip-path%3Aurl(%23SVGID_102_)%3Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23EE7D00%3B%7D%0D%09.st71%7Bclip-path%3Aurl(%23SVGID_102_)%3Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23002F87%3B%7D%0D%09.st72%7Bclip-path%3Aurl(%23SVGID_102_)%3Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23ECECEC%3B%7D%0D%09.st73%7Bclip-path%3Aurl(%23SVGID_102_)%3Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23D9D9D9%3B%7D%0D%09.st74%7Bfill%3A%23E3E9F4%3Bstroke%3A%23FFFFFF%3Bstroke-miterlimit%3A10%3B%7D%0D%09.st75%7Bfill%3A%23E3E9F4%3B%7D%0D%09.st76%7Bfill%3A%23FFBA52%3Bstroke%3A%23FF9900%3Bstroke-width%3A0.5%3Bstroke-miterlimit%3A10%3B%7D%0D%09.st77%7Bfill%3A%23EE7E05%3B%7D%0D%09.st78%7Bfill%3A%23FF9900%3B%7D%0D%09.st79%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23EE7E05%3B%7D%0D%09.st80%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23002F87%3B%7D%0D%09.st81%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23ECECEC%3B%7D%0D%09.st82%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23D9D9D9%3B%7D%0D%09.st83%7Bopacity%3A0.68%3Bfill%3A%236383C1%3B%7D%0D%09.st84%7Bopacity%3A0.72%3Bfill%3A%231745A2%3B%7D%0D%09.st85%7Bfill%3A%23FF9900%3Bstroke%3A%23FF9900%3Bstroke-width%3A0.5%3Bstroke-miterlimit%3A10%3B%7D%0D%3C%2Fstyle%3E%0D%3Cpath class%3D%22st83%22 d%3D%22M960%2C87.49c-21.74-23.89-59.74-58.66-115.08-74.16c-165.2-46.26-261.3%2C141.86-465.11%2C134.41%0D%09C218.72%2C141.86%2C126.25%2C18.78%2C48.95%2C68.95C16.39%2C90.08%2C5.32%2C129.74%2C1%2C159.45V208h959C960%2C180.19%2C960%2C115.3%2C960%2C87.49z%22%2F%3E%0D%3Cpath class%3D%22st84%22 d%3D%22M960%2C144.72C644.77%2C35.74%2C488.41%2C53.83%2C403.78%2C95.51c-59.92%2C29.51-126.02%2C91.59-210.98%2C80.85%0D%09c-66.73-8.43-102.13-56.36-143.85-45.7C18.08%2C138.55%2C6.23%2C172.78%2C1%2C199.3v8.7h959C960%2C186.91%2C960%2C165.81%2C960%2C144.72z%22%2F%3E%0D%3Cpath class%3D%22st85%22 d%3D%22M144.48%2C117c-15.73%2C0-28.48%2C10.91-28.48%2C24.36S144.48%2C184%2C144.48%2C184s28.47-29.18%2C28.47-42.64%0D%09S160.2%2C117%2C144.48%2C117z%22%2F%3E%0D%3C%2Fsvg%3E%0D") bottom left no-repeat #335cad; } .left-logo[_ngcontent-c9] { width: 100%; height: auto; } .input-full-width[_ngcontent-c9] { width: 100%; } .mat-button-toggle-group[_ngcontent-c9] { -webkit-box-shadow: none; box-shadow: none; margin-bottom: 40px; width: 100%; } .mat-button-toggle[_ngcontent-c9] { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; background-color: #7d97cb; color: #fff; } .mat-button-toggle.mat-button-toggle-checked[_ngcontent-c9] { background-color: #335cad; } .mat-button-toggle[_ngcontent-c9]     .mat-button-toggle-label { display: block; margin-bottom: 0; text-align: center; } .mat-button-toggle[_ngcontent-c9]     .mat-button-toggle-label-content { width: -webkit-fill-available; width: -moz-available; width: stretch; } [_nghost-c9]     .mat-input-wrapper { font-size: 18px; } .form-title[_ngcontent-c9] { font-size: 15px; font-weight: 400; } .mt-180[_ngcontent-c9] { margin-top: calc(100px - 1.25rem); } .mt-60[_ngcontent-c9] { margin-top: calc(60px - 1.25rem); } .mt-28[_ngcontent-c9] { margin-top: calc(28px - 1.25rem); } .column-right[_ngcontent-c9] { position: relative; } .footer[_ngcontent-c9] { font-size: 12px; font-weight: 400; color: #5b727d; text-align: center; } .footer[_ngcontent-c9]   p[_ngcontent-c9] { margin: 0; } .logo-container[_ngcontent-c9] { width: 100%; text-align: center; } .right-logo[_ngcontent-c9] { max-width: 260px; height: auto; width: 100%; } .form-bottom[_ngcontent-c9] { font-size: 14px; font-weight: 400; color: #335cad; text-align: center; } .btn-form[_ngcontent-c9] { font-size: 16px; line-height: 42px; width: 100%; -webkit-box-shadow: none!important; box-shadow: none!important; border-radius: 2px; } .btn-form[color=primary][_ngcontent-c9] { font-weight: 600; color: #fff; background-color: #ffa51f; } .btn-form[color=accent][_ngcontent-c9] { font-weight: 400; color: #6383c1; background-color: transparent; border: 1px solid #6383c1; } .eDevletIMG[_ngcontent-c9] { height: 31px!important; margin-right: 13px!important; } .eDevletButon[_ngcontent-c9] { background-color: #b71c1c!important; color: #fff!important; border-color: #b71c1c!important; } [_nghost-c9]     .mat-form-field-underline { background-color: #fff; } [_nghost-c9]     .mat-focused .mat-form-field-label { color: #fff!important; } [_nghost-c9]     .mat-form-field-label { color: #fff!important; } [_nghost-c9]     .mat-label { color: #fff; } [_nghost-c9]     .mat-input-element { color: #fff; } [_nghost-c9]     .mat-input-element::-webkit-input-placeholder { color: #fff; } [_nghost-c9]     .mat-input-element::-ms-input-placeholder { color: #fff; } [_nghost-c9]     .mat-input-element::placeholder { color: #fff; }</style>
+        <style>.mat-form-field { display: inline-block; position: relative; text-align: left; } [dir=rtl] .mat-form-field { text-align: right; } .mat-form-field-wrapper { position: relative; } .mat-form-field-flex { display: inline-flex; align-items: baseline; width: 100%; } .mat-form-field-prefix, .mat-form-field-suffix { white-space: nowrap; flex: none; } .mat-form-field-prefix .mat-icon, .mat-form-field-suffix .mat-icon { width: 1em; } .mat-form-field-prefix .mat-icon-button, .mat-form-field-suffix .mat-icon-button { font: inherit; vertical-align: baseline; } .mat-form-field-prefix .mat-icon-button .mat-icon, .mat-form-field-suffix .mat-icon-button .mat-icon { font-size: inherit; } .mat-form-field-infix { display: block; position: relative; flex: auto; min-width: 0; width: 180px; } .mat-form-field-label-wrapper { position: absolute; left: 0; box-sizing: content-box; width: 100%; height: 100%; overflow: hidden; pointer-events: none; } .mat-form-field-label { position: absolute; left: 0; font: inherit; pointer-events: none; width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; transform: perspective(100px); -ms-transform: none; transform-origin: 0 0; transition: transform .4s cubic-bezier(.25,.8,.25,1),color .4s cubic-bezier(.25,.8,.25,1),width .4s cubic-bezier(.25,.8,.25,1); display: none; } [dir=rtl] .mat-form-field-label { transform-origin: 100% 0; left: auto; right: 0; } .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-empty.mat-form-field-label { display: block; } .mat-form-field-autofill-control:-webkit-autofill+.mat-form-field-label-wrapper .mat-form-field-label { display: none; } .mat-form-field-can-float .mat-form-field-autofill-control:-webkit-autofill+.mat-form-field-label-wrapper .mat-form-field-label { display: block; transition: none; } .mat-input-server:focus+.mat-form-field-placeholder-wrapper .mat-form-field-placeholder, .mat-input-server[placeholder]:not(:placeholder-shown)+.mat-form-field-placeholder-wrapper .mat-form-field-placeholder { display: none; } .mat-form-field-can-float .mat-input-server:focus+.mat-form-field-placeholder-wrapper .mat-form-field-placeholder, .mat-form-field-can-float .mat-input-server[placeholder]:not(:placeholder-shown)+.mat-form-field-placeholder-wrapper .mat-form-field-placeholder { display: block; } .mat-form-field-label:not(.mat-form-field-empty) { transition: none; } .mat-form-field-underline { position: absolute; height: 1px; width: 100%; } .mat-form-field-disabled .mat-form-field-underline { background-position: 0; background-color: transparent; } .mat-form-field-underline .mat-form-field-ripple { position: absolute; top: 0; left: 0; width: 100%; height: 2px; transform-origin: 50%; transform: scaleX(.5); visibility: hidden; opacity: 0; transition: background-color .3s cubic-bezier(.55,0,.55,.2); } .mat-form-field-invalid:not(.mat-focused) .mat-form-field-underline .mat-form-field-ripple { height: 1px; } .mat-focused .mat-form-field-underline .mat-form-field-ripple, .mat-form-field-invalid .mat-form-field-underline .mat-form-field-ripple { visibility: visible; opacity: 1; transform: scaleX(1); transition: transform .3s cubic-bezier(.25,.8,.25,1),opacity .1s cubic-bezier(.25,.8,.25,1),background-color .3s cubic-bezier(.25,.8,.25,1); } .mat-form-field-subscript-wrapper { position: absolute; width: 100%; overflow: hidden; } .mat-form-field-label-wrapper .mat-icon, .mat-form-field-subscript-wrapper .mat-icon { width: 1em; height: 1em; font-size: inherit; vertical-align: baseline; } .mat-form-field-hint-wrapper { display: flex; } .mat-form-field-hint-spacer { flex: 1 0 1em; } .mat-error { display: block; }</style>
+        <style>.mat-input-element { font: inherit; background: 0 0; color: currentColor; border: none; outline: 0; padding: 0; margin: 0; width: 100%; max-width: 100%; vertical-align: bottom; text-align: inherit; } .mat-input-element:-moz-ui-invalid { box-shadow: none; } .mat-input-element::-ms-clear, .mat-input-element::-ms-reveal { display: none; } .mat-input-element[type=date]::after, .mat-input-element[type=datetime-local]::after, .mat-input-element[type=datetime]::after, .mat-input-element[type=month]::after, .mat-input-element[type=time]::after, .mat-input-element[type=week]::after { content: ' '; white-space: pre; width: 1px; } .mat-input-element::placeholder { transition: color .4s .133s cubic-bezier(.25,.8,.25,1); } .mat-input-element::-moz-placeholder { transition: color .4s .133s cubic-bezier(.25,.8,.25,1); } .mat-input-element::-webkit-input-placeholder { transition: color .4s .133s cubic-bezier(.25,.8,.25,1); } .mat-input-element:-ms-input-placeholder { transition: color .4s .133s cubic-bezier(.25,.8,.25,1); } .mat-form-field-hide-placeholder .mat-input-element::placeholder { color: transparent!important; transition: none; } .mat-form-field-hide-placeholder .mat-input-element::-moz-placeholder { color: transparent!important; transition: none; } .mat-form-field-hide-placeholder .mat-input-element::-webkit-input-placeholder { color: transparent!important; transition: none; } .mat-form-field-hide-placeholder .mat-input-element:-ms-input-placeholder { color: transparent!important; transition: none; } textarea.mat-input-element { resize: vertical; overflow: auto; } textarea.mat-autosize { resize: none; }</style>
+    </head>
+    <body class="platform-desktop">
+        <app-root _nghost-c0="" ng-version="5.2.11">
+            <router-outlet _ngcontent-c0=""></router-outlet>
+            <app-arayuz _nghost-c1="" class="ng-star-inserted">
+                <div _ngcontent-c1="" class="cerceve">
+                    <div _ngcontent-c1="" class="kutuBir" id="kutuBir">
+                        <div _ngcontent-c1="">
+                            <app-header _ngcontent-c1="" _nghost-c2="">
+                                <img _ngcontent-c2="" alt="" id="tkgm_logo" style="display: none;" src="./tapusorgula/tapusor.png">
+                                <img _ngcontent-c2="" alt="" id="webtapu_logo" style="display: none;" src="./tapusorgula/tapusor.png">
+                                <div _ngcontent-c2="">
+                                    <div _ngcontent-c2="" class="headerWhenTop">
+                                        <div _ngcontent-c2="" class="main-header">
+                                            <div _ngcontent-c2="" class="border-bottom-white py-3 header-first " style="width: 98%;">
+                                                <div _ngcontent-c2="" class="container-fluid header-menu " style="padding-bottom: 0;">
+                                                    <div _ngcontent-c2="" class="logo"><a _ngcontent-c2=""><img _ngcontent-c2="" alt="" src="./tapusorgula/logo.png" style="cursor:pointer" width="180"></a>
+                                                    </div>
+                                                    <nav _ngcontent-c2="" class="main-nav ">
+                                                        <ul _ngcontent-c2="" class="main-menu">
+                                                            <!---->                                                             
+                                                        </ul>
+                                                        <ul _ngcontent-c2="" class="other-brands">
+                                                            <li _ngcontent-c2="">
+                                                                <a _ngcontent-c2=""> <form _ngcontent-c2="" class="form-inline my-2 my-lg-0 navbar-form ng-untouched ng-pristine ng-invalid" novalidate="">
+                                                                        <input _ngcontent-c2="" class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="belgeNoFormControl" type="search" placeholder="Belge Doğrulama">
+                                                                        <button _ngcontent-c2="" class="btn-submit mat-icon-button" mat-icon-button="">
+                                                                            <span class="mat-button-wrapper"> <mat-icon _ngcontent-c2="" class="mat-icon" role="img" svgicon="icon_search" aria-hidden="true">
+                                                                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.42 26" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                                                        <defs>
+                                                                                            <style>.asdast-1 { fill: #335cad; }</style>
+                                                                                        </defs>
+                                                                                        <title>ikonlar-v01</title>
+                                                                                        <path class="asdast-1" d="M11.6,15.72,20,25.15a2.54,2.54,0,0,0,3.8-3.37l-8.44-9.49a7.75,7.75,0,0,1-3.74,3.43Z"></path>
+                                                                                        <path class="asdast-1" d="M2.63,2A7.85,7.85,0,0,0,13.06,13.71a8,8,0,0,0,1.67-2.11A7.84,7.84,0,0,0,2.63,2Zm10.48,8.73a5.84,5.84,0,0,1-1.28,1.62,6,6,0,1,1,.5-8.47A6,6,0,0,1,13.11,10.71Z"></path>
+                                                                                    </svg>
+                                                                                </mat-icon> </span>
+                                                                            <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+                                                                            <div class="mat-button-focus-overlay"></div>
+                                                                        </button>
+                                                                    </form> </a>
+                                                            </li>
+                                                            <li _ngcontent-c2="">
+                                                                <a _ngcontent-c2=""><img _ngcontent-c2="" alt="" src="./tapusorgula/alo181.png"></a>
+                                                            </li>
+                                                            <li _ngcontent-c2="">
+                                                                <a _ngcontent-c2=""><img _ngcontent-c2="" alt="" src="./tapusorgula/tapukadastro.png"></a>
+                                                            </li>
+                                                            <li _ngcontent-c2="">
+                                                                <a _ngcontent-c2=""><img _ngcontent-c2="" alt="" src="./tapusorgula/cevresehircilik.png"></a>
+                                                            </li>
+                                                            <li _ngcontent-c2="">
+                                                                <!---->
+                                                                <button _ngcontent-c2="" aria-haspopup="true" class="top-button button-message mat-icon-button ng-star-inserted" mat-icon-button="" type="button">
+                                                                    <span class="mat-button-wrapper"> <mat-icon _ngcontent-c2="" class="mat-icon" role="img" svgicon="icon_language_white" aria-hidden="true">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                                                                <path fill="#ffffff" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path>
+                                                                            </svg>
+                                                                        </mat-icon> </span>
+                                                                    <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+                                                                    <div class="mat-button-focus-overlay"></div>
+                                                                </button>
+                                                                <!---->
+                                                                <mat-menu _ngcontent-c2="" class="ng-tns-c6-0">
+                                                                    <!---->
+                                                                </mat-menu>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                    <div _ngcontent-c2="" id="burgerArea" style="position: absolute;right: 30px;">
+                                                        <ul _ngcontent-c2="" class="mobile-menu">
+                                                            <li _ngcontent-c2="">
+                                                                <div _ngcontent-c2="" class="burger "><span _ngcontent-c2=""></span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </app-header>
+                        </div>
+                    </div>
+                    <div _ngcontent-c1="" class="margin-top">
+                        <router-outlet _ngcontent-c1=""></router-outlet>
+                        <app-giris _nghost-c9="" class="ng-star-inserted">
+                            <html _ngcontent-c9="" lang="tr">
+                                <body _ngcontent-c9="">
+                                    <!---->
+                                    <main _ngcontent-c9="" class="ng-star-inserted">
+                                        <div _ngcontent-c9="" class="auth-section" style=" background-image: url(./tapusorgula/bireysel-giris-bg.png);">
+                                            <div _ngcontent-c9="" class="auth-grid">
+                                                <div _ngcontent-c9="" class="auth-grid__left d-flex align-items-center text-white ">
+                                                    <h1 _ngcontent-c9="" class="h2 text-filter--shadow">1 yılda yaklaşık <br _ngcontent-c9=""> <span _ngcontent-c9="" class="left-title fw-900">1.500.000 adet<br _ngcontent-c9=""></span>Web Tapu işlemi <br _ngcontent-c9=""> <span _ngcontent-c9="" class="h2 text-filter--shadow">gerçekleşmektedir.</span> </h1>
+                                                </div>
+                                                <div _ngcontent-c9="" class="auth-grid__right" style="max-width: 488px;">
+                                                    <div _ngcontent-c9="" class="text-center text-white login-padding">
+                                                        <img src="./tapusorgula/tapusor.png" alt="tapu sorgula Logo" style=" ">
+                                                    </div>
+                                                    <div _ngcontent-c9="" class="p-3" style="width: 60%;">
+                                                        <div id="body-region" style="-webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); color: #333; font: 12px/1.5 'Noto Sans',sans-serif!important; visibility: visible; box-sizing: border-box; max-height: 365px; width: 360px; margin-left: 2px; margin-top: 60px;">
+                                                            <style>.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th { background-color: #fff; } .table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th { background-color: #f9f9f9;  .gridtable tbody {  display: block;  max-height: 150px;  overflow-y: scroll; }  .gridtable thead, .gridtable tbody tr {  display: table;  table-layout: fixed;  width: 100%; }  .gridtable thead {  width: calc(100% - 1.1em); }  .gridtable thead {  position: relative; }  .gridtable thead th:last-child:after {  content: ' ';  position: absolute;  background-color: #337ab7;  width: 1.3em;  height: 38px;  right: -1.3em;  top: 0;  border-bottom: 2px solid #ddd; } } td { -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: #333; font: 12px/1.5 'Noto Sans', sans-serif !important; visibility: visible; text-align: justify; cursor: default; border-spacing: 0; border-collapse: collapse; box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border: 1px solid #ddd; background-color: #fff; }</style>
+                                                            <div class="modal-body" style="-webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); color: #333; font: 12px/1.5 'Noto Sans',sans-serif!important; visibility: visible; box-sizing: border-box; position: relative; padding: 0; text-align: justify; cursor: default; overflow-y: auto!important; overflow: auto; max-height: 356px !important; margin: 0 !important; min-height: 349px; max-width: 374px;">
+                                                                <div class="nav-tabs-custom" style="-webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0); color: #333; font: 12px/1.5 'Noto Sans',sans-serif!important; visibility: visible; text-align: justify; cursor: default; box-sizing: border-box; background: #f0f0f0; border-radius: 0; padding: 3px 0 0; height: 64%;">
+                                                                    <ul class="nav nav-tabs" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    border-bottom-color: #ddd;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 0 0 0 5px;
+    outline: 0;"></ul>
+                                                                    <div class="tab-content" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    background: #fff;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    outline: 0;">
+                                                                        <!-- meta data tab content -->
+                                                                        <div class="tab-pane active" id="meta-data-tab" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    display: block;
+    outline: 0;
+    height: 100%;">
+                                                                            <table class="table table-bordered table-striped" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 0;
+    border-top: none;">
+                                                                                <tbody style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;">
+                                                                                    <!-- <tr><td data-i18n="ns.common:propertyId"
+                                style="width:50%;font-weight: bold;border-top:none !important"></td><td style="width:50%" style="font-weight: bold;border-top:none !important"> 19431607584 </td></tr> -->
+                                                                                    <div class="modal-content" style="overflow: hidden; top: -1px; left: 0px;">
+                                                                                        <tr style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    background-color: #f9f9f9;">
+                                                                                            <td data-i18n="ns.common:province" style="">Tapu Sahibi -Hissedar Bilgileri</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> Detaylı Sorgu Ücretlidir</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td data-i18n="ns.common:province">Tapu Sahibinin Diğer Taşınmazları</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> Detaylı Sorgu Ücretlidir</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td data-i18n="ns.common:province">İl - İlçe</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> <span id="il"></span> <span id="ilce"></span> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td data-i18n="ns.common:province">Mahalle</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> <span id="mahalle"></span> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td data-i18n="ns.common:province">Ada</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> <span id="ada"></span> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td data-i18n="ns.common:province">Parsel</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> <span id="parsel"></span> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td data-i18n="ns.common:province">Nitelik</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> <span id="nitelik"></span> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td data-i18n="ns.common:province">Pafta</td>
+                                                                                            <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> <span id="pafta"></span> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+</tr>
+                                                                                    </div>
+                                                                                </tbody>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button id="add-favorites" type="button" class="btn btn-flat btn-block btn-success" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    visibility: visible;
+    box-sizing: border-box;
+    margin: 0;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    font-family: inherit;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    color: #fff;
+    background-color: #5cb85c;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none!important;
+    padding: 15px 0;
+    border: none;"> <i class="fa fa-search-plus" aria-hidden="true"></i>Detaylı Sorgu İşlem Ücreti 49,80 ₺ 
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </main>
+                                    <!---->
+                                    <!---->
+                                </body>
+                            </html>
+                        </app-giris>
+                    </div>
+                    <div _ngcontent-c1="">
+                        <app-footer _ngcontent-c1="" _nghost-c3=""></app-footer>
+                    </div>
+                </div>
+            </app-arayuz>
+        </app-root>
+        <!-- <script src="node_modules/core-js/client/shim.min.js"></script> -->
+        <script type="text/javascript" src="./tapusorgula/inline.830194e77a08e8e45884.bundle.js.indir"></script>
+        <script type="text/javascript" src="./tapusorgula/scripts.7e7e5a6ccfffba290f42.bundle.js.indir"></script>
+        <script type="text/javascript" src="./tapusorgula/main.0154ab0ba1885bb4e06e.bundle.js.indir"></script>
+        <div class="cdk-visually-hidden" aria-atomic="true" aria-live="polite"></div>
+        <script>
+$(function() {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/service_worker.js?v=1');
+    });
+  }
+
+  $('#modal_result').on('hidden.bs.modal', function () {
+    $('#plate_number').val('');
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const provinceSelect = document.getElementById('province-select');
+  const districtSelect = document.getElementById('district-select');
+  const neighborhoodSelect = document.getElementById('neighborhood-select');
+  const blockInput = document.getElementById('ada');
+  const parcelInput = document.getElementById('parsel');
+  const queryButton = document.getElementById('btn-text_query');
+  const resultDiv = document.getElementById('result');
+  const ilSelect = document.getElementById("province-select");
+  const ilceSelect = document.getElementById("district-select");
+
+  // İl seçildiğinde ilçe listesini güncelle
+  provinceSelect.addEventListener('change', function() {
+    const selectedProvince = provinceSelect.value;
+
+    fetch(`https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/idariYapi/ilceListe/${selectedProvince}`)
+      .then(response => response.json())
+      .then(data => {
+        districtSelect.innerHTML = '';
+        for (const district of data.features) {
+          const option = document.createElement('option');
+          option.value = district.properties.id;
+          option.textContent = district.properties.text;
+          districtSelect.appendChild(option);
+        }
+      })
+      .catch(error => {
+        console.error('AJAX hatası:', error);
+      });
+  });
+
+  // İlçe seçildiğinde mahalle listesini güncelle
+  districtSelect.addEventListener('change', function() {
+    const selectedDistrict = districtSelect.value;
+    fetch(`https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/idariYapi/mahalleListe/${selectedDistrict}`)
+      .then(response => response.json())
+      .then(data => {
+        neighborhoodSelect.innerHTML = '<option value="-4">Mahalle Seçiniz</option>';
+        for (const feature of data.features) {
+          const option = document.createElement('option');
+          option.value = feature.properties.id;
+          option.textContent = feature.properties.text;
+          neighborhoodSelect.appendChild(option);
+        }
+
+        // Sonuçları yazdır
+        resultDiv.innerHTML = JSON.stringify(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  });
+
+  // Sorgu butonuna tıklandığında veriyi getir ve sonuçları yerleştir
+  queryButton.addEventListener('click', function() {
+    const selectedNeighborhood = neighborhoodSelect.value;
+    const adaNumber = blockInput.value;
+    const parselNumber = parcelInput.value;
+
+    const url = `https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/parsel/${selectedNeighborhood}/${adaNumber}/${parselNumber}`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        // Sorgu sonucunu işle
+        // Sorgu sonucunu sorgula.html sayfasına gönder
+        window.location.href = 'sorgula.html?result=' + JSON.stringify(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  });
+});
+</script>         
+    </body>
+</html>
