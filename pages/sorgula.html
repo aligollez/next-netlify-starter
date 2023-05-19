@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap');
+
+      .fw-light {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase
+      }
+    </style>
+    <div class="modal-dialog" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    box-sizing: border-box;
+    position: relative;
+    width: 500px;
+    margin: 60px auto;
+    transition: transform .3s ease-out;
+    transform: translate(0,0);">
+      <div class="modal-content" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    box-shadow: none!important;
+    border-radius: 0;
+    overflow: hidden;
+    top: -1px;
+    left: 0px;">
+        <div class="modal-header" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    box-sizing: border-box;
+    background-color: #337ab7;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+    border-bottom: 0px !important;
+    cursor: move;">
+          <center>
+            <h4 class="modal-title" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: center;
+    cursor: move;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+    font-size: 18px;
+    margin: 0;
+    line-height: 50px;
+    display: inline-block;">Kayıtların tüm detaylarını görüntülemek için ücretli sorgulama yapmanız gerekmektedir. </h4>
+            <h4>Detaylı Görüntüleme ve Sms olarak Gönder </h4>
+            <h4>İşlem Ücreti 49,80 ₺</h4>
+          </center>
+        </div>
+        <div id="body-region" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    box-sizing: border-box;">
+          <style>
+            .table-striped>tbody>tr:nth-child(odd)>td,
+            .table-striped>tbody>tr:nth-child(odd)>th {
+              background-color: #fff;
+            }
+
+            .table-striped>tbody>tr:nth-child(even)>td,
+            .table-striped>tbody>tr:nth-child(even)>th {
+              background-color: #f9f9f9;
+
+              .gridtable tbody {
+                display: block;
+                max-height: 150px;
+                overflow-y: scroll;
+              }
+
+              .gridtable thead,
+              .gridtable tbody tr {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+              }
+
+              .gridtable thead {
+                width: calc(100% - 1.1em);
+              }
+
+              .gridtable thead {
+                position: relative;
+              }
+
+              .gridtable thead th:last-child:after {
+                content: ' ';
+                position: absolute;
+                background-color: #337ab7;
+                width: 1.3em;
+                height: 38px;
+                right: -1.3em;
+                top: 0;
+                border-bottom: 2px solid #ddd;
+              }
+            }
+
+            td {
+              -webkit-text-size-adjust: 100%;
+              -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+              color: #333;
+              font: 12px/1.5 'Noto Sans', sans-serif !important;
+              visibility: visible;
+              text-align: justify;
+              cursor: default;
+              border-spacing: 0;
+              border-collapse: collapse;
+              box-sizing: border-box;
+              padding: 8px;
+              line-height: 1.42857143;
+              vertical-align: top;
+              border: 1px solid #ddd;
+              background-color: #fff;
+            }
+          </style>
+          <div class="modal-body" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    text-align: justify;
+    cursor: default;
+    overflow-y: auto!important;
+    overflow: auto;
+    max-height: 857px !important;
+    margin: 0 !important;
+    min-height: 350px;">
+            <div class="nav-tabs-custom" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    background: #f0f0f0;
+    border-radius: 0;
+    padding: 3px 0 0;
+    height: 100%;">
+              <ul class="nav nav-tabs" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    border-bottom-color: #ddd;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 0 0 0 5px;
+    outline: 0;"></ul>
+              <div class="tab-content" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    background: #fff;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    outline: 0;">
+                <!-- meta data tab content -->
+                <div class="tab-pane active" id="meta-data-tab" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    display: block;
+    outline: 0;
+    height: 100%;">
+                  <table class="table table-bordered table-striped" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    box-sizing: border-box;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 0;
+    border-top: none;">
+                    <tbody style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;">
+                      <!-- <tr><td data-i18n="ns.common:propertyId"
+                                style="width:50%;font-weight: bold;border-top:none !important"></td><td style="width:50%" style="font-weight: bold;border-top:none !important"> 19431607584 </td></tr> -->
+                      <div class="modal-content" style="overflow: hidden; top: -1px; left: 0px;">
+                        <tr style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    text-align: justify;
+    cursor: default;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    background-color: #f9f9f9;">
+	 
+                          <td data-i18n="ns.common:province" style="">Tapu Sahibi -Hissedar Bilgileri</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> Detaylı Sorgu Ücretlidir</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="ns.common:province">Tapu Sahibinin Diğer Taşınmazları</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;"> Detaylı Sorgu Ücretlidir</td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="ns.common:province">İl - İlçe</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;">
+                            <span id="il"></span>
+                            <span id="ilce"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="ns.common:province">Mahalle</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;">
+                            <span id="mahalle"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="ns.common:province">Ada</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;">
+                            <span id="ada"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="ns.common:province">Parsel</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;">
+                            <span id="parsel"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="ns.common:province">Nitelik</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;">
+                            <span id="nitelik"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-i18n="ns.common:province">Pafta</td>
+                          <td style="background:#ec121fa8;font-weight: 700;font-style: normal;">
+                            <span id="pafta"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <button id="add-favorites" type="button" class="btn btn-flat btn-block btn-success" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    visibility: visible;
+    box-sizing: border-box;
+    margin: 0;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    font-family: inherit;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    color: #fff;
+    background-color: #5cb85c;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none!important;
+    padding: 15px 0;
+    border: none;">DETAYLI SORGULA</button>
+                        </tr>
+                      </div></tbody>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    font: 12px/1.5 'Noto Sans',sans-serif!important;
+    visibility: visible;
+    box-sizing: border-box;
+    text-align: right;
+    border-top: 0;
+    padding: 0;"></div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./script.js"></script>
+    <script>
+      const provinceSelect = document.getElementById('province-select');
+      const districtSelect = document.getElementById('district-select');
+      const neighborhoodSelect = document.getElementById('neighborhood-select');
+      const blockInput = document.getElementById('ada');
+      const parcelInput = document.getElementById('parsel');
+      const queryButton = document.getElementById('btn-text_query');
+      const button = document.getElementById('btn-text_query');
+      const resultDiv = document.getElementById('result');
+      const ilSelect = document.getElementById("province-select");
+      const ilceSelect = document.getElementById("district-select");
+      // İl seçildiğinde ilçe listesini güncelle
+      provinceSelect.addEventListener('change', function() {
+        const selectedProvince = provinceSelect.value;
+        fetch(`https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/idariYapi/ilceListe/${selectedProvince}`).then(response => response.json()).then(data => {
+          districtSelect.innerHTML = '';
+          for (const district of data.features) {
+            const option = document.createElement('option');
+            option.value = district.properties.id;
+            option.textContent = district.properties.text;
+            districtSelect.appendChild(option);
+          }
+        }).catch(error => {
+          console.error('AJAX hatası:', error);
+        });
+      });
+      // İlçe seçildiğinde mahalle listesini güncelle
+      districtSelect.addEventListener('change', function() {
+        const selectedDistrict = districtSelect.value;
+        fetch(`https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/idariYapi/mahalleListe/${selectedDistrict}`).then(response => response.json()).then(data => {
+          neighborhoodSelect.innerHTML = ' < option value = "-4" > Mahalle Seçiniz < /option>';
+          for (const feature of data.features) {
+            const option = document.createElement('option');
+            option.value = feature.properties.id;
+            option.textContent = feature.properties.text;
+            neighborhoodSelect.appendChild(option);
+          }
+          // Sonuçları yazdır
+          resultDiv.innerHTML = JSON.stringify(data);
+        }).catch(error => {
+          console.error(error);
+        });
+      });
+      // Sorgu butonuna tıklandığında veriyi getir ve sonuçları yerleştir
+      button.addEventListener('click', function() {
+        const selectedNeighborhood = neighborhoodSelect.value;
+        const adaNumber = blockInput.value;
+        const parselNumber = parcelInput.value;
+        const url = `https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/parsel/${selectedNeighborhood}/${adaNumber}/${parselNumber}`;
+        fetch(url).then(response => response.json()).then(data => {
+          const modelContainer = document.getElementById('model-container');
+          const il = modelContainer.querySelector('#il');
+          const ilce = modelContainer.querySelector('#ilce');
+          const mahalle = modelContainer.querySelector('#mahalle');
+          const ada = modelContainer.querySelector('#ada');
+          const parsel = modelContainer.querySelector('#parsel');
+          const tapuAlani = modelContainer.querySelector('#tapu-alani');
+          const nitelik = modelContainer.querySelector('#nitelik');
+          const mevkii = modelContainer.querySelector('#mevkii');
+          const zeminTipi = modelContainer.querySelector('#zemin-tipi');
+          const pafta = modelContainer.querySelector('#pafta');
+          il.textContent = data.properties.ilAd;
+          ilce.textContent = data.properties.ilceAd;
+          mahalle.textContent = data.properties.mahalleAd;
+          ada.textContent = data.properties.adaNo;
+          parsel.textContent = data.properties.parselNo;
+          tapuAlani.textContent = data.properties.alan;
+          nitelik.textContent = data.properties.nitelik;
+          mevkii.textContent = data.properties.mevkii;
+          zeminTipi.textContent = data.properties.zeminKmdurum;
+          pafta.textContent = data.properties.pafta;
+        }).catch(error => {
+          console.error(error);
+        });
+      });
+      // Mahalle seçildiğinde yapılabilecek işlemler
+      neighborhoodSelect.addEventListener('change', function() {
+        const selectedNeighborhood = neighborhoodSelect.value;
+        const selectedNeighborhoodText = neighborhoodSelect.options[neighborhoodSelect.selectedIndex].text;
+        // Burada seçilen mahalle bilgilerini kullanarak isteğe bağlı işlemler yapabilirsiniz.
+        // Örneğin, seçilen mahalle bilgilerini yazdırmak:
+        console.log("Seçilen Mahalle ID: ", selectedNeighborhood);
+        console.log("Seçilen Mahalle Adı: ", selectedNeighborhoodText);
+        // İsteğe bağlı olarak, diğer işlemleri burada gerçekleştirebilirsiniz.
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const button = document.getElementById('button');
+        const resultDiv = document.getElementById('result');
+        const ilSelect = document.getElementById("il-select");
+        const ilceSelect = document.getElementById("ilce-select");
+        // DOMContentLoaded olayı gerçekleştiğinde yapılacak işlemler
+        document.addEventListener('DOMContentLoaded', function() {
+          var button = document.querySelector('.modal-dialog button.close');
+          button.addEventListener('click', function() {
+            var modalDialog = document.querySelector('.modal-dialog');
+            modalDialog.style.display = 'none';
+          });
+        });
+      });
+    </script>
+    <div id="result"></div>
+    <script>
+      $(function() {
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service_worker.js?v=1');
+          });
+        }
+        $('#modal_result').on('hidden.bs.modal', function() {
+          $('#plate_number').val('');
+        });
+      });
+    </script>
+    <script>
+      // URL'den JSON değerini alın
+      var urlParams = new URLSearchParams(window.location.search);
+      var jsonValue = JSON.parse(urlParams.get('result'));
+      // JSON değerini HTML öğelerine yerleştirme
+      document.getElementById('il').textContent = jsonValue.properties.ilAd;
+      document.getElementById('ilce').textContent = jsonValue.properties.ilceAd;
+      document.getElementById('mahalle').textContent = jsonValue.properties.mahalleAd;
+      document.getElementById('ada').textContent = jsonValue.properties.adaNo;
+      document.getElementById('parsel').textContent = jsonValue.properties.parselNo;
+      document.getElementById('nitelik').textContent = jsonValue.properties.nitelik;
+      document.getElementById('pafta').textContent = jsonValue.properties.pafta;
+    </script>
+  </body>
+</html>

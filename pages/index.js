@@ -1,23 +1,20 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import { promises as fs } from 'fs';
+import path from 'path';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+export default function Index() {
+  return <div>Hello, world!</div>;
+}
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+export async function getStaticProps() {
+  // index.html dosyasının içeriğini oluştur
+  const htmlContent = renderToString(<Index />);
 
-      <Footer />
-    </div>
-  )
+  // index.html dosyasını oluşturulan içerikle birlikte yaz
+  await fs.writeFile(path.join(process.cwd(), 'public', 'index.html'), htmlContent, 'utf-8');
+
+  return {
+    props: {},
+  };
 }
