@@ -1,20 +1,36 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import React from 'react';
-import { renderToString } from 'react-dom/server';
+import ReactDOMServer from 'react-dom/server';
+import Head from 'next/head';
 
 export default function Index() {
-  return <div>Hello, world!</div>;
+  return (
+    <div>
+      <Head>
+        <title>Next.js - Index</title>
+      </Head>
+      <h1>Hello, world!</h1>
+    </div>
+  );
 }
 
 export async function getStaticProps() {
-  // index.html dosyasının içeriğini oluştur
-  const htmlContent = renderToString(<Index />);
+  const app = ReactDOMServer.renderToString(<Index />);
 
-  // index.html dosyasını oluşturulan içerikle birlikte yaz
-  await fs.writeFile(path.join(process.cwd(), 'public', 'index.html'), htmlContent, 'utf-8');
+  const html = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Next.js - Index</title>
+      </head>
+      <body>
+        <div id="root">${app}</div>
+      </body>
+    </html>
+  `;
 
-  return {
-    props: {},
-  };
+  await fs.writeFile(path.resolve('public', 'index.html'), html, 'utf-8');
+
+  return { props: {} };
 }
